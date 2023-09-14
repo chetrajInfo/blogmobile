@@ -62,3 +62,29 @@ img {
     height: 100px;
     margin-left: 10px;
 }
+nav{
+    margin: 5px;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-size: clamp(1em, 2vw, 1.1em);
+    list-style: none;
+    font-weight: bold;
+}
+nav li{
+    padding: 6px;
+    text-decoration: underline grey;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+nav li:hover{
+    background-color: rgb(212, 208, 203);
+    text-decoration: underline rgb(182, 11, 11);
+}
+a{
+    text-decoration: none;
+}
