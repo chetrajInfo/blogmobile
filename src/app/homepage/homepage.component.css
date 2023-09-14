@@ -88,3 +88,40 @@ nav li:hover{
 a{
     text-decoration: none;
 }
+section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 3rem;
+   font-size: 17px;
+}
+.trending{
+    margin-top: 3rem;
+}
+.trending img{
+    height: 55vh;
+    width: 17vw;
+}
+
+.trend-content{
+    width: 27vw;
+    height: auto;
+    box-shadow: 2px 2px 3px rgb(228, 225, 225);
+    padding: 1rem;
+}
+.trend-content ul li{
+    margin-top: 3px;
+}
+.color-img img{
+   height: 200px;
+   width: 200px;
+   margin-top: 1rem;
+}
+.price{
+    background-color: white;
+    color: rgb(90, 71, 238);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 19px;
+    font-weight: bold;
+}
