@@ -122,6 +122,25 @@ section{
     background-color: white;
     color: rgb(90, 71, 238);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 19px;
     font-weight: bold;
 }
+h3, h2{
+    margin-top: 2rem;
+}
+
+@keyframes blinking {
+    0% {
+      color: red;
+    }
+    50% {
+      color: yellow;
+    }
+    100% {
+      color: red;
+    }
+  }
+  
+  h2{
+    animation: blinking 1s infinite;
+  }
+  
