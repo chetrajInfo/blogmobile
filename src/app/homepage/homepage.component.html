@@ -20,7 +20,7 @@
 </ul>
 </nav>
 <h2>Trending New Release</h2>
-<h4>Release date September 12, 2023</h4>
+<h4>Apple iPhone 15 release date September 12, 2023</h4>
 <section>
     <div class="trending">
 
@@ -164,6 +164,85 @@
        
     </div>
 </section>
-<footer>
+<hr>
+<section class="choicebrand">
+    <div style="text-align: center; font-size: clamp(2em, 2vw, 3em); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+        <strong>List Of Mobile Sold Based On People Choice And Model.</strong>
+    </div>
 
+
+
+  <div class="app-container">
+     <!-- Company Details -->
+     <div class="mob-style" *ngIf="data">
+    <h1>1. {{ data.company.name }}</h1>
+    <p>Famous for: {{ data.company.famousFor }} and was founded in: {{ data.company.founded }},
+    {{ data.company.founders.join(', ') }} are the founder of Apple Inc company.</p>
+  </div>
+  
+  <!-- Products -->
+  <div  class="mob-style" *ngIf="data">
+    <div *ngFor="let product of data.products">
+      <h3>{{ product.type }}</h3>
+      <div *ngFor="let model of product.models">
+        <p>{{ model.name }} </p>
+       
+        <p>Details: {{ model.details }}</p>
+        <img [src]="model.image" alt="{{ model.name }}" >&nbsp;&nbsp;
+        <video [src]="model.video" controls width="300"></video>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Reviews -->
+  <div class="mob-style" *ngIf="data">
+    <h2>Reviews</h2>
+    <div *ngFor="let review of data.reviews">
+      <h3>Review for {{ review.product }}</h3>
+      <p>{{ review.review }}</p>
+      <p>Price: {{ review.price }}</p>
+      <p>Rating: {{ review.rating }}/5</p>
+    </div>
+  </div>    
+  </div>
+
+  <!--
+  <div>
+    2. Samsung
+  </div>
+  <div>
+    3. Google Pixel
+  </div>
+  <div>
+    4. Motorola
+  </div>
+  <div>
+    5. Oppo
+  </div>
+  <div>
+    6. Vivo
+  </div>
+  <div>
+    7. OnePlus
+  </div>
+</section>
+
+  -->
+
+<footer>
+    <p class="author">
+        Created on 2022 by Chet Bhandari. 
+    </p>
+      <div class="about-us">
+          <a href=""> About Us </a>
+          <a href=""> Link With US </a>
+          <a href="">New Portal</a>
+      </div>
+    <div class="find-me">
+       <ul >
+         <li>Facebook</li>
+         <li>Twitter</li>
+         <li>Instagram</li>
+       </ul>
+    </div>
 </footer>

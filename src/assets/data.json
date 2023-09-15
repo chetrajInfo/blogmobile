@@ -1,0 +1,30 @@
+{
+    "company": {
+      "name": "Apple Inc.",
+      "famousFor": "Innovative technology and high-quality products",
+      "founded": "1976",
+      "founders": ["Steve Jobs", "Steve Wozniak", "Ronald Wayne"]
+    },
+    "products": [
+      {
+        "type": "iPhone",
+        "models": [
+          {
+            "name": "The iPhone 6 and 6 Plus are the best-selling iPhone models of all time, with over 222 million units sold combined. They were released in 2014 and were the first iPhones to feature larger screens, which made them more appealing to a wider range of users. The iPhone 6 and 6 Plus were also successful because they were well-timed. They were released just as the smartphone market was starting to mature and consumers were looking for more powerful and feature-rich devices. Other iPhone models that have sold well include the iPhone 5s, iPhone 7, and iPhone 12. However, none of these models have come close to the sales of the iPhone 6 and 6 Plus. ",
+            "details": "Features A15 Bionic chip, improved battery life, and advanced camera system.",
+            "image": "./assets/iphone7.jpg",
+            "video": "https://www.youtube.com/embed/tgbNymZ7vqY"
+          }
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "product": "iPhone 6 and 6 Plus",
+        "review": "The iPhone 6 is a great phone with many improvements over the previous generation.",
+        "price": "The iPhone 6 and 6 Plus were originally released in 2014 with starting prices of $649 and $749, respectively. However, the prices of these phones have dropped significantly since then. As of September 15, 2023, the average price of a used iPhone 6 is $71 and the average price of a used iPhone 6 Plus is $87. You can find these phones for even cheaper if you shop around.",
+        "rating": 4.5
+      }
+    ]
+  }
+  
