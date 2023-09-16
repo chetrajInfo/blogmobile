@@ -178,7 +178,12 @@ h3, h2{
     height: 350px;
     width: 250px;
   }
-
+.app-container img{
+  margin-left: 2rem;
+}
+.app-container iframe{
+  margin-left: 6rem;
+}
 
 
 

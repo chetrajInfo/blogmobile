@@ -185,25 +185,26 @@
     <div *ngFor="let product of data.products">
       <h3>{{ product.type }}</h3>
       <div *ngFor="let model of product.models">
-        <p>{{ model.name }} </p>
-       
+        <p>{{ model.name }} </p>    
         <p>Details: {{ model.details }}</p>
         <img [src]="model.image" alt="{{ model.name }}" >&nbsp;&nbsp;
-        <video [src]="model.video" controls width="300"></video>
+        <iframe width="560" height="315" [src]="getVideoUrl(model.video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </div>
   
   <!-- Reviews -->
   <div class="mob-style" *ngIf="data">
-    <h2>Reviews</h2>
+    <!--<h2>Reviews</h2>-->
     <div *ngFor="let review of data.reviews">
       <h3>Review for {{ review.product }}</h3>
       <p>{{ review.review }}</p>
       <p>Price: {{ review.price }}</p>
       <p>Rating: {{ review.rating }}/5</p>
     </div>
-  </div>    
+    <p>More detail are available in this link: <a href="https://www.apple.com/iphone/compare/?modelList=iphone-12-mini,iphone-15-pro,iphone-15" target="_blank">iPhone Comparesion</a></p> 
+  </div>   
+  
   </div>
 
   <!--
